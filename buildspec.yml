@@ -13,10 +13,9 @@ phases:
     commands:
       - pylint $CODEBUILD_SRC_DIR/expense_tracker/* || true
   build:
-    commands:  # Properly aligned under build
+    commands:  # listing files after build
       - echo "Build complete. Listing files:"
       - ls -R
 artifacts:
   files:
     - '**/*'
-
