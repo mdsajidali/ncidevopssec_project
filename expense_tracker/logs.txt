@@ -1,0 +1,527 @@
+Retrieving logs...
+============= i-00b9ba9c6db591a63 ==============
+----------------------------------------
+/var/log/web.stdout.log
+----------------------------------------
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1599, in handle
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.callHandlers(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1661, in callHandlers
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    hdlr.handle(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 952, in handle
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.emit(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/utils/log.py", line 125, in emit
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    reporter.get_traceback_text(),
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 417, in get_traceback_text
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    c = Context(self.get_traceback_data(), autoescape=False, use_l10n=False)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 379, in get_traceback_data
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    "settings": self.filter.get_safe_settings(),
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 154, in get_safe_settings
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    settings_dict[k] = self.cleanse_setting(k, getattr(settings, k))
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    val = self._add_script_prefix(val)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    if value.startswith(("http://", "https://", "/")):
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]: AttributeError: 'list' object has no attribute 'startswith'
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]: During handling of the above exception, another exception occurred:
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]: Traceback (most recent call last):
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    response = get_response(request)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/utils/deprecation.py", line 134, in __call__
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    response = response or self.get_response(request)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    response = response_for_exception(request, exc)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 143, in response_for_exception
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    log_response(
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/utils/log.py", line 241, in log_response
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    getattr(logger, level)(
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1475, in error
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self._log(ERROR, msg, args, **kwargs)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1589, in _log
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.handle(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1599, in handle
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.callHandlers(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1661, in callHandlers
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    hdlr.handle(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 952, in handle
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.emit(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/utils/log.py", line 125, in emit
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    reporter.get_traceback_text(),
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 417, in get_traceback_text
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    c = Context(self.get_traceback_data(), autoescape=False, use_l10n=False)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 379, in get_traceback_data
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    "settings": self.filter.get_safe_settings(),
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 154, in get_safe_settings
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    settings_dict[k] = self.cleanse_setting(k, getattr(settings, k))
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    val = self._add_script_prefix(val)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    if value.startswith(("http://", "https://", "/")):
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]: AttributeError: 'list' object has no attribute 'startswith'
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]: During handling of the above exception, another exception occurred:
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]: Traceback (most recent call last):
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/gunicorn/workers/gthread.py", line 282, in handle
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    keepalive = self.handle_request(req, conn)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/gunicorn/workers/gthread.py", line 334, in handle_request
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    respiter = self.wsgi(environ, resp.start_response)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/handlers/wsgi.py", line 124, in __call__
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    response = self.get_response(request)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/handlers/base.py", line 140, in get_response
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    response = self._middleware_chain(request)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    response = response_for_exception(request, exc)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 143, in response_for_exception
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    log_response(
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/utils/log.py", line 241, in log_response
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    getattr(logger, level)(
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1475, in error
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self._log(ERROR, msg, args, **kwargs)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1589, in _log
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.handle(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1599, in handle
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.callHandlers(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 1661, in callHandlers
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    hdlr.handle(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/usr/lib64/python3.9/logging/__init__.py", line 952, in handle
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    self.emit(record)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/utils/log.py", line 125, in emit
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    reporter.get_traceback_text(),
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 417, in get_traceback_text
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    c = Context(self.get_traceback_data(), autoescape=False, use_l10n=False)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 379, in get_traceback_data
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    "settings": self.filter.get_safe_settings(),
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/views/debug.py", line 154, in get_safe_settings
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    settings_dict[k] = self.cleanse_setting(k, getattr(settings, k))
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    val = self._add_script_prefix(val)
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]:    if value.startswith(("http://", "https://", "/")):
+Dec 11 16:32:06 ip-172-31-32-201 web[188251]: AttributeError: 'list' object has no attribute 'startswith'
+Dec 11 16:32:15 ip-172-31-32-201 web[188243]: [2024-12-11 16:32:15 +0000] [188243] [INFO] Handling signal: term
+Dec 11 16:32:16 ip-172-31-32-201 web[188251]: [2024-12-11 16:32:16 +0000] [188251] [INFO] Worker exiting (pid: 188251)
+Dec 11 16:32:16 ip-172-31-32-201 web[188243]: [2024-12-11 16:32:16 +0000] [188243] [INFO] Shutting down: Master
+Dec 11 16:32:17 ip-172-31-32-201 web[189665]: [2024-12-11 16:32:17 +0000] [189665] [INFO] Starting gunicorn 21.2.0
+Dec 11 16:32:17 ip-172-31-32-201 web[189665]: [2024-12-11 16:32:17 +0000] [189665] [INFO] Listening at: http://127.0.0.1:8000 (189665)
+Dec 11 16:32:17 ip-172-31-32-201 web[189665]: [2024-12-11 16:32:17 +0000] [189665] [INFO] Using worker: gthread
+Dec 11 16:32:17 ip-172-31-32-201 web[189673]: [2024-12-11 16:32:17 +0000] [189673] [INFO] Booting worker with pid: 189673
+
+
+----------------------------------------
+/var/log/eb-engine.log
+----------------------------------------
+2024/12/11 16:32:14.709156 [INFO] Running command /bin/sh -c systemctl show -p PartOf xray.service
+2024/12/11 16:32:14.738763 [WARN] stopProcess Warning: process xray is not registered 
+2024/12/11 16:32:14.738806 [INFO] Running command /bin/sh -c systemctl stop xray.service
+2024/12/11 16:32:14.772961 [INFO] Executing instruction: stop proxy
+2024/12/11 16:32:14.772996 [INFO] Running command /bin/sh -c systemctl show -p PartOf httpd.service
+2024/12/11 16:32:14.792693 [WARN] deregisterProcess Warning: process httpd is not registered, skipping...
+
+2024/12/11 16:32:14.792727 [INFO] Running command /bin/sh -c systemctl show -p PartOf nginx.service
+2024/12/11 16:32:14.818963 [INFO] Running command /bin/sh -c systemctl is-active nginx.service
+2024/12/11 16:32:14.843332 [INFO] Running command /bin/sh -c systemctl show -p PartOf nginx.service
+2024/12/11 16:32:14.861467 [INFO] Running command /bin/sh -c systemctl stop nginx.service
+2024/12/11 16:32:15.016994 [INFO] Running command /bin/sh -c systemctl disable nginx.service
+2024/12/11 16:32:15.415596 [INFO] Running command /bin/sh -c systemctl daemon-reload
+2024/12/11 16:32:15.806021 [INFO] Running command /bin/sh -c systemctl reset-failed
+2024/12/11 16:32:15.816061 [INFO] Executing instruction: FlipApplication
+2024/12/11 16:32:15.816077 [INFO] Fetching environment variables...
+2024/12/11 16:32:15.816357 [INFO] Purge old process...
+2024/12/11 16:32:15.816384 [INFO] Running command /bin/sh -c systemctl stop eb-app.target
+2024/12/11 16:32:15.832992 [INFO] Running command /bin/sh -c systemctl show -p ConsistsOf eb-app.target | cut -d= -f2
+2024/12/11 16:32:15.846882 [INFO] web.service
+
+2024/12/11 16:32:15.846907 [INFO] deregistering process: web
+2024/12/11 16:32:15.846921 [INFO] Running command /bin/sh -c systemctl show -p PartOf web.service
+2024/12/11 16:32:15.861285 [INFO] Running command /bin/sh -c systemctl is-active web.service
+2024/12/11 16:32:15.870649 [INFO] Running command /bin/sh -c systemctl disable web.service
+2024/12/11 16:32:16.252912 [INFO] Removed "/etc/systemd/system/multi-user.target.wants/web.service".
+
+2024/12/11 16:32:16.253002 [INFO] Running command /bin/sh -c systemctl daemon-reload
+2024/12/11 16:32:16.530779 [INFO] Running command /bin/sh -c systemctl reset-failed
+2024/12/11 16:32:16.540737 [INFO] Running command /bin/sh -c systemctl is-active web.service
+2024/12/11 16:32:16.549749 [INFO] Process web has been fully terminated
+2024/12/11 16:32:16.549772 [INFO] All processes have been fully terminated
+2024/12/11 16:32:16.549776 [INFO] Removing /var/app/current/ if it exists
+2024/12/11 16:32:16.553860 [INFO] Renaming /var/app/staging/ to /var/app/current/
+2024/12/11 16:32:16.553887 [INFO] Register application processes...
+2024/12/11 16:32:16.553892 [INFO] Registering the proc: web
+
+2024/12/11 16:32:16.553903 [INFO] Running command /bin/sh -c systemctl show -p PartOf web.service
+2024/12/11 16:32:16.568560 [INFO] Running command /bin/sh -c systemctl daemon-reload
+2024/12/11 16:32:16.894969 [INFO] Running command /bin/sh -c systemctl reset-failed
+2024/12/11 16:32:16.904564 [INFO] Running command /bin/sh -c systemctl is-enabled eb-app.target
+2024/12/11 16:32:16.913651 [INFO] Running command /bin/sh -c systemctl enable eb-app.target
+2024/12/11 16:32:17.313823 [INFO] Running command /bin/sh -c systemctl start eb-app.target
+2024/12/11 16:32:17.325689 [INFO] Running command /bin/sh -c systemctl enable web.service
+2024/12/11 16:32:17.593715 [INFO] Created symlink /etc/systemd/system/multi-user.target.wants/web.service → /etc/systemd/system/web.service.
+
+2024/12/11 16:32:17.593754 [INFO] Running command /bin/sh -c systemctl show -p PartOf web.service
+2024/12/11 16:32:17.606428 [INFO] Running command /bin/sh -c systemctl is-active web.service
+2024/12/11 16:32:17.616002 [INFO] Running command /bin/sh -c systemctl start web.service
+2024/12/11 16:32:17.665495 [INFO] Executing instruction: start X-Ray
+2024/12/11 16:32:17.665519 [INFO] X-Ray is not enabled.
+2024/12/11 16:32:17.665528 [INFO] Executing instruction: start proxy with new configuration
+2024/12/11 16:32:17.665557 [INFO] Running command /bin/sh -c /usr/sbin/nginx -t -c /var/proxy/staging/nginx/nginx.conf
+2024/12/11 16:32:17.694511 [INFO] nginx: [warn] could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+nginx: the configuration file /var/proxy/staging/nginx/nginx.conf syntax is ok
+nginx: configuration file /var/proxy/staging/nginx/nginx.conf test is successful
+
+2024/12/11 16:32:17.695014 [INFO] Running command /bin/sh -c cp -rp /var/proxy/staging/nginx/* /etc/nginx
+2024/12/11 16:32:17.700514 [INFO] Running command /bin/sh -c systemctl show -p PartOf nginx.service
+2024/12/11 16:32:17.725741 [INFO] Running command /bin/sh -c systemctl daemon-reload
+2024/12/11 16:32:18.220129 [INFO] Running command /bin/sh -c systemctl reset-failed
+2024/12/11 16:32:18.234596 [INFO] Running command /bin/sh -c systemctl show -p PartOf nginx.service
+2024/12/11 16:32:18.253203 [INFO] Running command /bin/sh -c systemctl is-active nginx.service
+2024/12/11 16:32:18.268349 [INFO] Running command /bin/sh -c systemctl start nginx.service
+2024/12/11 16:32:18.405693 [INFO] Executing instruction: configureSqsd
+2024/12/11 16:32:18.405711 [INFO] This is a web server environment instance, skip configure sqsd daemon ...
+2024/12/11 16:32:18.405715 [INFO] Executing instruction: startSqsd
+2024/12/11 16:32:18.405718 [INFO] This is a web server environment instance, skip start sqsd daemon ...
+2024/12/11 16:32:18.405722 [INFO] Executing instruction: Track pids in healthd
+2024/12/11 16:32:18.405727 [INFO] This is an enhanced health env...
+2024/12/11 16:32:18.405740 [INFO] Running command /bin/sh -c systemctl show -p ConsistsOf aws-eb.target | cut -d= -f2
+2024/12/11 16:32:18.416992 [INFO] nginx.service healthd.service cfn-hup.service
+
+2024/12/11 16:32:18.417027 [INFO] Running command /bin/sh -c systemctl show -p ConsistsOf eb-app.target | cut -d= -f2
+2024/12/11 16:32:18.427338 [INFO] web.service
+
+2024/12/11 16:32:18.427633 [INFO] Executing instruction: RunAppDeployPostDeployHooks
+2024/12/11 16:32:18.427647 [INFO] Executing platform hooks in .platform/hooks/postdeploy/
+2024/12/11 16:32:18.427662 [INFO] The dir .platform/hooks/postdeploy/ does not exist
+2024/12/11 16:32:18.427664 [INFO] Finished running scripts in /var/app/current/.platform/hooks/postdeploy
+2024/12/11 16:32:18.427669 [INFO] Executing cleanup logic
+2024/12/11 16:32:18.427749 [INFO] CommandService Response: {"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"Engine execution has succeeded.","returncode":0,"events":[{"msg":"Instance deployment successfully generated a 'Procfile'.","timestamp":1733934731098,"severity":"INFO"},{"msg":"Instance deployment completed successfully.","timestamp":1733934738427,"severity":"INFO"}]}]}
+
+2024/12/11 16:32:18.427905 [INFO] Platform Engine finished execution on command: app-deploy
+
+2024/12/11 16:43:16.892152 [INFO] Starting...
+2024/12/11 16:43:16.892205 [INFO] Starting EBPlatform-PlatformEngine
+2024/12/11 16:43:16.892412 [INFO] reading event message file
+2024/12/11 16:43:16.892666 [INFO] Engine received EB command cfn-hup-exec
+
+2024/12/11 16:43:16.959973 [INFO] Running command /bin/sh -c /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-1:250738637992:stack/awseb-e-ii2fhia2ez-stack/5b6abbb0-b3ec-11ef-b3e9-06dab945c80f -r AWSEBAutoScalingGroup --region eu-west-1
+2024/12/11 16:43:17.329026 [INFO] Running command /bin/sh -c /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-1:250738637992:stack/awseb-e-ii2fhia2ez-stack/5b6abbb0-b3ec-11ef-b3e9-06dab945c80f -r AWSEBBeanstalkMetadata --region eu-west-1
+2024/12/11 16:43:17.805728 [INFO] checking whether command tail-log is applicable to this instance...
+2024/12/11 16:43:17.805846 [INFO] this command is applicable to the instance, thus instance should execute command
+2024/12/11 16:43:17.805852 [INFO] Engine command: (tail-log)
+
+2024/12/11 16:43:17.805914 [INFO] Executing instruction: GetTailLogs
+2024/12/11 16:43:17.805918 [INFO] Tail Logs...
+2024/12/11 16:43:17.806363 [INFO] Running command /bin/sh -c tail -n 100 /var/log/web.stdout.log
+2024/12/11 16:43:17.809468 [INFO] Running command /bin/sh -c tail -n 100 /var/log/eb-engine.log
+
+
+----------------------------------------
+/var/log/eb-hooks.log
+----------------------------------------
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/commands/migrate.py", line 100, in handle
+    self.check(databases=[database])
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/checks/urls.py", line 107, in check_url_settings
+    value = getattr(settings, name)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'list' object has no attribute 'startswith'
+
+2024/12/11 15:51:01.579144 [INFO] Running command .platform/hooks/predeploy/01_setup.sh
+2024/12/11 15:51:03.361160 [INFO] Requirement already satisfied: asgiref==3.8.1 in /var/app/venv/staging-LQM1lest/lib/python3.9/site-packages (from -r requirements.txt (line 1)) (3.8.1)
+Requirement already satisfied: Django==4.2.16 in /var/app/venv/staging-LQM1lest/lib/python3.9/site-packages (from -r requirements.txt (line 2)) (4.2.16)
+Requirement already satisfied: gunicorn in /var/app/venv/staging-LQM1lest/lib/python3.9/site-packages (from -r requirements.txt (line 3)) (21.2.0)
+Requirement already satisfied: sqlparse==0.5.1 in /var/app/venv/staging-LQM1lest/lib/python3.9/site-packages (from -r requirements.txt (line 4)) (0.5.1)
+Requirement already satisfied: typing_extensions==4.12.2 in /var/app/venv/staging-LQM1lest/lib/python3.9/site-packages (from -r requirements.txt (line 5)) (4.12.2)
+Requirement already satisfied: packaging in /var/app/venv/staging-LQM1lest/lib/python3.9/site-packages (from gunicorn->-r requirements.txt (line 3)) (23.2)
+
+2024/12/11 15:51:03.361196 [INFO] WARNING: You are using pip version 21.3.1; however, version 24.3.1 is available.
+You should consider upgrading via the '/var/app/venv/staging-LQM1lest/bin/python3.9 -m pip install --upgrade pip' command.
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/var/app/staging/expenses/static' in the STATICFILES_DIRS setting does not exist.
+Traceback (most recent call last):
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/app/staging/manage.py", line 22, in <module>
+    main()
+  File "/var/app/staging/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/base.py", line 412, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/base.py", line 458, in execute
+    output = self.handle(*args, **options)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 209, in handle
+    collected = self.collect()
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 135, in collect
+    handler(path, prefixed_path, storage)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 368, in copy_file
+    if not self.delete_file(path, prefixed_path, source_storage):
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 278, in delete_file
+    if self.storage.exists(prefixed_path):
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 537, in _setup
+    self._wrapped = storages[STATICFILES_STORAGE_ALIAS]
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/files/storage/handler.py", line 55, in create_storage
+    return storage_cls(**options)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 28, in __init__
+    base_url = settings.STATIC_URL
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'list' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "/var/app/staging/manage.py", line 22, in <module>
+    main()
+  File "/var/app/staging/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/base.py", line 412, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/base.py", line 458, in execute
+    output = self.handle(*args, **options)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/base.py", line 106, in wrapper
+    res = handle_func(*args, **kwargs)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/commands/migrate.py", line 100, in handle
+    self.check(databases=[database])
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/core/checks/urls.py", line 107, in check_url_settings
+    value = getattr(settings, name)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 109, in __getattr__
+    val = self._add_script_prefix(val)
+  File "/var/app/venv/staging-LQM1lest/lib64/python3.9/site-packages/django/conf/__init__.py", line 156, in _add_script_prefix
+    if value.startswith(("http://", "https://", "/")):
+AttributeError: 'list' object has no attribute 'startswith'
+
+
+
+----------------------------------------
+/var/log/nginx/access.log
+----------------------------------------
+172.31.32.88 - - [11/Dec/2024:16:32:06 +0000] "GET / HTTP/1.1" 500 141 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:32:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:32:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:32:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:32:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:32:49 +0000] "GET / HTTP/1.1" 200 979 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.32.88 - - [11/Dec/2024:16:32:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:33:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:33:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:33:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:33:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:33:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:33:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:33:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:33:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:34:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:34:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:34:12 +0000] "GET / HTTP/1.1" 200 979 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.15.41 - - [11/Dec/2024:16:34:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:34:15 +0000] "GET / HTTP/1.1" 200 979 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.15.41 - - [11/Dec/2024:16:34:15 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.15.41 - - [11/Dec/2024:16:34:17 +0000] "GET / HTTP/1.1" 200 979 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.15.41 - - [11/Dec/2024:16:34:17 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.32.88 - - [11/Dec/2024:16:34:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:34:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:34:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:34:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:34:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:35:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:35:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:35:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:35:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:35:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:35:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:35:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:35:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:36:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:36:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:36:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:36:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:36:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+1.14.7.100 - - [11/Dec/2024:16:36:32 +0000] "HEAD /Core/Skin/Login.aspx HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" "-"
+172.31.32.88 - - [11/Dec/2024:16:36:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:36:43 +0000] "GET / HTTP/1.1" 200 979 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.15.41 - - [11/Dec/2024:16:36:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:36:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:37:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:37:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:37:11 +0000] "GET /login/ HTTP/1.1" 200 1258 "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.15.41 - - [11/Dec/2024:16:37:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:37:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:37:20 +0000] "POST /login/ HTTP/1.1" 302 0 "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.32.88 - - [11/Dec/2024:16:37:20 +0000] "GET / HTTP/1.1" 200 9020 "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "193.1.209.141"
+172.31.15.41 - - [11/Dec/2024:16:37:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:37:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:37:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:37:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:38:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:38:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:38:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:38:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:38:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:38:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:38:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:38:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:39:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:39:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:39:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:39:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:39:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:39:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:39:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:39:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:40:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:40:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:40:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:40:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:40:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:40:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:40:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:40:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:41:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:41:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:41:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:41:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:41:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:41:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:41:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:41:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:42:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:42:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:42:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:42:20 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:42:30 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:42:35 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:42:45 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:42:50 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:43:00 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.32.88 - - [11/Dec/2024:16:43:05 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+172.31.15.41 - - [11/Dec/2024:16:43:15 +0000] "GET / HTTP/1.1" 200 979 "-" "ELB-HealthChecker/2.0" "-"
+
+
+----------------------------------------
+/var/log/nginx/error.log
+----------------------------------------
+2024/12/11 15:26:11 [error] 184841#184841: *279 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:26:11 [error] 184841#184841: *280 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:27:51 [error] 184842#184842: *309 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:27:51 [error] 184842#184842: *309 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:27:51 [error] 184842#184842: *311 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:27:51 [error] 184842#184842: *312 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:32:22 [warn] 185853#185853: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 15:32:23 [warn] 185887#185887: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 15:32:23 [warn] 185888#185888: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 15:33:38 [error] 185891#185891: *21 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:38 [error] 185891#185891: *21 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:38 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:38 [error] 185891#185891: *23 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *21 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *23 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *21 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:41 [error] 185891#185891: *26 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *21 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *23 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:42 [error] 185891#185891: *29 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:48 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:33:48 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:33:48 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:33:48 [error] 185891#185891: *21 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:33:57 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:57 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:57 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:33:57 [error] 185891#185891: *26 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:34:22 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:34:22 [error] 185891#185891: *26 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:34:22 [error] 185891#185891: *23 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:34:22 [error] 185891#185891: *29 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:35:59 [warn] 185890#185890: *70 using uninitialized "year" variable while logging request, client: 93.174.93.12, server: , request: "o kRH�#�:N�ⴂ/�	T���y�h���="�� ��,��n�Y�bhl�(=':���oȢד���幐 (�"
+2024/12/11 15:35:59 [warn] 185890#185890: *70 using uninitialized "month" variable while logging request, client: 93.174.93.12, server: , request: "o kRH�#�:N�ⴂ/�	T���y�h���="�� ��,��n�Y�bhl�(=':���oȢד���幐 (�"
+2024/12/11 15:35:59 [warn] 185890#185890: *70 using uninitialized "day" variable while logging request, client: 93.174.93.12, server: , request: "o kRH�#�:N�ⴂ/�	T���y�h���="�� ��,��n�Y�bhl�(=':���oȢד���幐 (�"
+2024/12/11 15:35:59 [warn] 185890#185890: *70 using uninitialized "hour" variable while logging request, client: 93.174.93.12, server: , request: "o kRH�#�:N�ⴂ/�	T���y�h���="�� ��,��n�Y�bhl�(=':���oȢד���幐 (�"
+2024/12/11 15:38:52 [error] 185890#185890: *119 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:38:52 [error] 185890#185890: *119 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:38:52 [error] 185890#185890: *121 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:38:52 [error] 185890#185890: *122 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:38 [error] 185891#185891: *233 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:38 [error] 185891#185891: *233 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:38 [error] 185891#185891: *233 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:38 [error] 185891#185891: *233 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:43 [error] 185891#185891: *217 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:40:43 [error] 185891#185891: *233 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:40:43 [error] 185891#185891: *217 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:40:43 [error] 185891#185891: *233 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 15:40:46 [error] 185891#185891: *233 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:46 [error] 185891#185891: *217 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:46 [error] 185891#185891: *233 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:40:46 [error] 185891#185891: *233 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 15:46:23 [warn] 186960#186960: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 15:46:23 [warn] 186994#186994: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 15:46:23 [warn] 186995#186995: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 15:48:08 [warn] 187096#187096: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 15:48:08 [warn] 187097#187097: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 16:01:14 [warn] 188247#188247: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 16:01:15 [warn] 188281#188281: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 16:01:15 [warn] 188282#188282: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 16:32:17 [warn] 189669#189669: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 16:32:18 [warn] 189703#189703: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 16:32:18 [warn] 189704#189704: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/12/11 16:32:49 [error] 189706#189706: *9 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:32:49 [error] 189706#189706: *11 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:32:49 [error] 189706#189706: *9 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:32:49 [error] 189706#189706: *11 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:12 [error] 189706#189706: *34 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:12 [error] 189706#189706: *34 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:12 [error] 189707#189707: *36 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:12 [error] 189707#189707: *37 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:15 [error] 189707#189707: *37 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:15 [error] 189706#189706: *34 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:15 [error] 189707#189707: *36 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:15 [error] 189707#189707: *41 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:17 [error] 189707#189707: *36 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:17 [error] 189707#189707: *37 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:17 [error] 189706#189706: *34 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:34:17 [error] 189707#189707: *41 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.15.41, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:36:43 [error] 189706#189706: *85 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:36:43 [error] 189706#189706: *85 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:36:43 [error] 189706#189706: *87 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:36:43 [error] 189706#189706: *88 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:37:11 [error] 189706#189706: *88 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 16:37:11 [error] 189706#189706: *87 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 16:37:11 [error] 189706#189706: *88 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 16:37:11 [error] 189706#189706: *85 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/login/"
+2024/12/11 16:37:20 [error] 189706#189706: *88 open() "/var/app/current/static/expenses/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:37:20 [error] 189706#189706: *87 open() "/var/app/current/static/styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:37:20 [error] 189706#189706: *88 open() "/var/app/current/static/expenses/expense_list_styles.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list_styles.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+2024/12/11 16:37:20 [error] 189706#189706: *85 open() "/var/app/current/static/expenses/expense_list.css" failed (2: No such file or directory), client: 172.31.32.88, server: , request: "GET /static/expenses/expense_list.css HTTP/1.1", host: "x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com", referrer: "http://x23293519venv.eba-sfz7b2tv.eu-west-1.elasticbeanstalk.com/"
+
+
