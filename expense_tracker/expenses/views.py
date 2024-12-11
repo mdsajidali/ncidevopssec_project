@@ -70,6 +70,7 @@ def expense_update(request, id):
     return render(request, 'expenses/expense_form.html', {'form': form, 'form_title': 'Edit Expense', 'button_text': 'Update Expense'})
 
 
+#only a logged in user can delete the existinng entries
 def expense_delete(request, id):
     expense = get_object_or_404(Expense, id=id, user=request.user)
     expense.delete()
