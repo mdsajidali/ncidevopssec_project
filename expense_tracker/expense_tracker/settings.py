@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-"""STATICFILES_DIRS = [
+"""STATIC_URL = STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'expenses', 'static'),
 ]"""
 # Add or update the STATIC_ROOT setting

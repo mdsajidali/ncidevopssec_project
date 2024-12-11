@@ -1,0 +1,2 @@
+ERROR: This directory has not been set up with the EB CLI
+You must first run "eb init".
